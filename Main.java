@@ -81,7 +81,7 @@ public class Main {
         terrain.printStatus(count);
         terrain.turnWriter(count++);
 
-        System.out.println("Shall players move one step or until the end? Type \'Y\' or \'N\': ");
+        System.out.print("Shall players move one step or until the end? Type \'Y\' or \'N\': ");
         String decision = input.next().toLowerCase();
 
         while (true) {
@@ -101,7 +101,7 @@ public class Main {
             terrain.turnWriter(count++);
 
             if (decision.equals("y")) {
-                System.out.println("Shall players move one step or until the end? Type \'Y\' or \'N\': ");
+                System.out.print("Shall players move one step or until the end? Type \'Y\' or \'N\': ");
                 decision = input.next().toLowerCase();
             }
 
